@@ -30,7 +30,7 @@ class DbSwitchService
      */
     public function connectionTo($key, $database)
     {
-        Config::set("database.connections.{$key}.database", $database);
+        Config::set("database.connections.{$key}", $database);
 
         $this->reconnect($key, $database);
     }
@@ -40,16 +40,12 @@ class DbSwitchService
      * @param string $key The connection key under which you will switch databases, ex. platform, site, etc.
      * @param string $database The database to reconnect to.
      */
-    protected function reconnect($key, $database)
+    protected function reconnect($key)
     {
-        $connections = DB::getConnections();
-        /** @var MySqlConnection $connection */
-        $connection = isset($connections[$key]) ? $connections[$key] : '';
-
-        if (is_object($connection) && $connection->getDatabaseName() != $database) {
-            $connection->setDatabaseName($database);
-            $connection->reconnect();
-        }
+        DB::purge('mysql');
+        // Switch in set default;
+        DB::setDefaultConnection($key);
+        DB::reconnect();
     }
 
 }
