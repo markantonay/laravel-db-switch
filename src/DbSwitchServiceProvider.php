@@ -1,5 +1,5 @@
 <?php
-namespace Rolice\LaravelDbSwitch;
+namespace Markantonay\LaravelDbSwitch;
 
 use Illuminate\Support\ServiceProvider;
 

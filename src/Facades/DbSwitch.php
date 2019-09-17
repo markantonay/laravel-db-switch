@@ -1,5 +1,5 @@
 <?php
-namespace Rolice\LaravelDbSwitch\Facades;
+namespace Markantonay\LaravelDbSwitch\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

@@ -1,5 +1,5 @@
 <?php
-namespace Rolice\LaravelDbSwitch;
+namespace Markantonay\LaravelDbSwitch;
 
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\DB;
