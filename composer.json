@@ -1,6 +1,6 @@
 {
   "name": "markantonay/laravel-db-switch",
-  "version": "2.1.1",
+  "version": "2.2.1",
   "description": "Simple and light DB switcher for Laravel by rolice forked for custom",
   "type": "library",
   "minimum-stability": "stable",
@@ -25,5 +25,10 @@
     "psr-4": {
       "Markantonay\\LaravelDbSwitch\\Test\\": "tests/"
     }
+  },
+  "extra": {
+        "branch-alias": {
+            "dev-master": "2.2-dev"
+        }
   }
 }
