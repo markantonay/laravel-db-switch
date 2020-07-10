@@ -1,6 +1,5 @@
 {
-  "name": "markantonay/laravel-db-switch",
-  "version": "2.2.1",
+  "name": "markantonay/laravel-db-switch",  
   "description": "Simple and light DB switcher for Laravel by rolice forked for custom",
   "type": "library",
   "minimum-stability": "stable",
